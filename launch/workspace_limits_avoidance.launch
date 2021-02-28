@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding ="UTF-8"?>
+
+<!-- ***************************************************************************** -->
+<!-- ********************* WORKSPACE_LIMITS_AVOIDANCE.LAUNCH ********************* -->
+<!-- *********************       Author: Livio Bisogni       ********************* -->
+<!-- *********************   © 2021 Turtley & Turtles Ltd.   ********************* -->
+<!-- ***************************************************************************** -->
+
+<launch>
+    <!-- Turtlesim Node -->
+    <node pkg="turtlesim" type="turtlesim_node" name="sim"/>
+
+    <!-- Workspace limits avoidance -->
+    <node pkg="workspace_limits_avoidance" type="workspace_limits_avoidance" name="workspace_limits_avoidance" output="screen" required="true"/>
+</launch>
