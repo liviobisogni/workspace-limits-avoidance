@@ -29,10 +29,24 @@ Open the terminal and type:
 $ roslaunch workspace_limits_avoidance workspace_limits_avoidance.launch
 ```
 
-## How to use1. The turtle pseudo-randomly moves within the bounds, so that walls are avoided.2. Once a wall is almost reached the turtle stops.3. Then, it goes back a bit and pseudo-randomly rotates.4. Finally, it moves forward again, and so forth.5. The turtle goes on indefinitely. Meanwhile, various types of information are printed on the terminal. Press `ESC` to exit the program anytime.
+## How to use
+
+1. The turtle pseudo-randomly moves within the bounds, so that walls are avoided.
+2. Once a wall is almost reached the turtle stops.
+3. Then, it goes back a bit and pseudo-randomly rotates.
+4. Finally, it moves forward again, and so forth.
+5. The turtle goes on indefinitely. Meanwhile, various types of information are printed on the terminal. Press `ESC` to exit the program anytime.
+
+## Some _turtlish_ screenshots
+
+* 6-th pseudo-random move:
 
 ![](img/w1.png)
 
+* then, after a couple of minutes...
+
 ![](img/w2.png)
+
+* ... and after a couple of hours
 
 ![](img/w3.png)
