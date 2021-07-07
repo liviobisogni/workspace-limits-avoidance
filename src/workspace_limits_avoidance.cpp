@@ -327,6 +327,8 @@ int main(int argc, char **argv)
     ros::Rate rate(10);  // Frequency to run loops to (10 Hz)
 
     while (ros::ok() && c != KEY_ESC) {
+        ros::spinOnce();
+        
         if (stop) {
             printf("\nCollision avoided!\n");
 
@@ -357,7 +359,6 @@ int main(int argc, char **argv)
 
         c = getch();  // read character (non-blocking)
 
-        ros::spinOnce();  // Allow processing of incoming messages
         rate.sleep();
     }
 
