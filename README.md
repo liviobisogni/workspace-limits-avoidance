@@ -10,7 +10,7 @@ Turtles go krazy!
 * [ROS](http://wiki.ros.org/ROS/Installation) - An open-source, meta-operating system for your robots. Repository tested only under ROS Kinetic, though.
 
 ## How to compile
-1. Move this folder (`workspace_limits_avoidance`) in `~/catkin_ws/src` (or wherever thy ROS workspace is).
+1. Move this folder (`workspace-limits-avoidance`) in `~/catkin_ws/src` (or wherever thy ROS workspace is).
 2. Launch a terminal window and navigate to the aforementioned ROS workspace, e.g.,
 
 	```
