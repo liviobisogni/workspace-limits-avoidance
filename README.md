@@ -13,20 +13,20 @@ Turtles go krazy!
 1. Move this folder (`workspace-limits-avoidance`) in `~/catkin_ws/src` (or wherever thy ROS workspace is).
 2. Launch a terminal window and navigate to the aforementioned ROS workspace, e.g.,
 
-	```
-	$ cd ~/catkin_ws/
+	```bash
+	cd ~/catkin_ws/
 	```
 3. Build the package:
 
-	```
-	$ catkin_make
+	```bash
+	catkin_make
 	```
 
 ## How to execute
 Open the terminal and type:
 
-```
-$ roslaunch workspace_limits_avoidance workspace_limits_avoidance.launch
+```bash
+roslaunch workspace_limits_avoidance workspace_limits_avoidance.launch
 ```
 
 ## How to use
