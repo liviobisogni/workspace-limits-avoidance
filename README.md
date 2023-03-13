@@ -1,52 +1,78 @@
-# __Workspace Limits Avoidance__
+# Workspace Limits Avoidance
 
-### _Author_: Livio Bisogni
-###### __&copy; 2021 Turtley & Turtles Ltd.__
-___
+Avoiding workspace boundaries!
+A ROS package for robots that avoids workspace boundaries during navigation.
+
+
+
 Turtles go krazy!
+Ensuring that a robot never touches the boundaries enclosing the obstacle-free region when moving.
 
-## Prerequisites
+<p align="center">
+	<a href="#prerequisite">Prerequisite</a>
+	<span> • </span>
+	<a href="#compile">Compile</a>
+	<span> • </span>
+	<a href="#execute">Execute</a>
+	<span> • </span>
+	<a href="#use">Use</a>
+	<span> • </span>
+	<a href="#screenshots">Screenshots</a>
+</p>
 
-* [ROS](http://wiki.ros.org/ROS/Installation) - An open-source, meta-operating system for your robots. Repository tested only under ROS Kinetic, though.
+## <a id="prerequisite"></a>Prerequisite
 
-## How to compile
-1. Move this folder (`workspace-limits-avoidance`) in `~/catkin_ws/src` (or wherever thy ROS workspace is).
-2. Launch a terminal window and navigate to the aforementioned ROS workspace, e.g.,
+* [ROS](http://wiki.ros.org/ROS/Installation) - An open-source, meta-operating system for your robots. The repository has been tested using ROS Kinetic.
+
+## <a id="compile"></a>How to Compile
+
+1. Move this package folder (`workspace-limits-avoidance`) to the `src` directory of your ROS workspace, for example `~/catkin_ws/src/`.
+2. Open a terminal window and navigate to your ROS workspace directory, e.g.:
 
 	```bash
 	cd ~/catkin_ws/
 	```
-3. Build the package:
+3. Build the package using the `catkin_make` command:
 
 	```bash
 	catkin_make
 	```
+This will compile the package and generate the necessary files for running the ROS nodes.
 
-## How to execute
-Open the terminal and type:
 
-```bash
-roslaunch workspace_limits_avoidance workspace_limits_avoidance.launch
-```
+## <a id="execute"></a>How to Execute
+1. Open a terminal window.
+2. Navigate to your ROS workspace directory.
+3. Launch the package using the following command:
 
-## How to use
+	```bash
+	roslaunch workspace_limits_avoidance workspace_limits_avoidance.launch
+	```
+This will launch the ROS nodes required to run the package.
 
-1. The turtle pseudo-randomly moves within the bounds, so that walls are avoided.
-2. Once a wall is almost reached the turtle stops.
-3. Then, it goes back a bit and pseudo-randomly rotates.
-4. Finally, it moves forward again, and so forth.
-5. The turtle goes on indefinitely. Meanwhile, various types of information are printed on the terminal. Press `ESC` to exit the program anytime.
 
-## Some _turtlish_ screenshots
+## <a id="use"></a>How to Use
+
+1. The turtle moves randomly within the workspace, avoiding walls and boundaries.
+2. When the turtle gets too close to a wall or boundary, it stops.
+3. The turtle then moves back a little and rotates randomly.
+4. After that, the turtle moves forward again and repeats the cycle.
+5. The turtle continues to move indefinitely, and the terminal prints various information. You can exit the program at any time by pressing `ESC`.
+
+
+## <a id="screenshots"></a>Screenshots
 
 * 6-th pseudo-random move:
+<p align="center" width="100%">
+    <img width="61.8%" src="img/w1.png"> 
+</p>
 
-![](img/w1.png)
+* then, after a couple of minutes...:
+<p align="center" width="100%">
+    <img width="61.8%" src="img/w2.png"> 
+</p>
 
-* then, after a couple of minutes...
-
-![](img/w2.png)
-
-* ... and after a couple of hours
-
-![](img/w3.png)
+* ... and after a couple of hours:
+<p align="center" width="100%">
+    <img width="61.8%" src="img/w3.png"> 
+</p>
