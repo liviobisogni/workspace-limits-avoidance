@@ -3,11 +3,6 @@
 Avoiding workspace boundaries!
 A ROS package for robots that avoids workspace boundaries during navigation.
 
-
-
-Turtles go krazy!
-Ensuring that a robot never touches the boundaries enclosing the obstacle-free region when moving.
-
 <p align="center">
 	<a href="#prerequisite">Prerequisite</a>
 	<span> • </span>
@@ -62,7 +57,7 @@ This will launch the ROS nodes required to run the package.
 
 ## <a id="screenshots"></a>Screenshots
 
-* 6-th pseudo-random move:
+* 6th pseudo-random move:
 <p align="center" width="100%">
     <img width="61.8%" src="img/w1.png"> 
 </p>
