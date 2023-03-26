@@ -1,6 +1,5 @@
 # Workspace Limits Avoidance
 
-Avoiding workspace boundaries!
 A ROS package for robots that avoids workspace boundaries during navigation.
 
 <p align="center">
